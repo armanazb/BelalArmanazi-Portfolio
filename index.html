@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belal Armanazi - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Belal Armanazi
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          belal.armanazi@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1-437-215-1780
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://theia-0-labs-prod-misc-tools-us-east-0.labs.cognitiveclass.ai/user/belalarmanaz/files/download/?id=77d6fcf9-1c46-4f6c-892b-74be8329b22a" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Belal Armanazi! <img src="https://theia-0-labs-prod-misc-tools-us-east-0.labs.cognitiveclass.ai/user/belalarmanaz/files/download/?id=5c69a7ae-d578-4ca3-b902-2e7313dcbffe" width="60px"/>
+          </h1>
+          <p>
+            I am an aspiring software engineer and an Electrical Engineering sophomore student at McMaster University. I have experience in many
+            aspects of development, such as back-end development in Python and C/C++ and front-end development in HTML/CSS/JavaScript. I am knowledged
+            in Object-Oriented Programming, Data Structures and Algorithms and even Game Development.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+            <img src="html_finalprojimages/py.png"/>
+            <h6>Python</h6>
+            <p> 1 year experience </p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/cplus.png"/>
+            <h6>C/C++</h6>
+            <p> 1 year experience </p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/git.png"/>
+            <h6>Git</h6>
+            <p> 1 year experience </p>
+        </div>
+        
+        <div class="skill">
+            <img src="html_finalprojimages/matlab.png"/>
+            <h6>MATLAB</h6>
+            <p> 1 year experience </p>
+        </div>
+        
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p> <1 year experience </p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p> <1 year experience </p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p> <1 year experience </p>
+        </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <ul>
+                  <li> Developed a personal portfolio website using modern day front-end tools such as HTML5, CSS3 and JavaScript.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+            <h3>Snake Game</h3>
+            <ul>
+              <li> Collaborated in a team of 2 to design and implement a classic Snake Game using C/C++ and core object-oriented programming principles.</li>
+              <li> Received an overall score of 100% from instructional evaluators.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3> Financial Management System </h3>
+            <ul>
+              <li> Developed a comprehensive financial management system using Python, consisting of a console-based user interface, enabling users to effectively track expenses and investments. </li>
+              <li> Developed an Algorithm to determine the net worth and financial status of the user. </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3> Ultrasonic White Cane </h3>
+            <ul>
+              <li> Led a sub-team of 3 members to utilize C++ to create firmware, for a smart-white cane to serve a visually impaired client. </li>
+              <li> Incorporated real-time data processing and sensor integration using an Ultrasonic Sensor. </li>
+              <li> Evaluated client-submitted feedback, resulting in a customer satisfaction rating of 84%. </li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" id="recommendation_name" placeholder="Name (Required)" required> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
